@@ -34,7 +34,21 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [['@nuxtjs/firebase']],
+
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyDvJFeA90n3XID0G8lqH2WD1tydpGUIpzo',
+      authDomain: 'jardin-sauvages.firebaseapp.com',
+      projectId: 'jardin-sauvages',
+      storageBucket: 'jardin-sauvages.appspot.com',
+      messagingSenderId: '819570240612',
+      appId: '1:819570240612:web:c54c9a900c0b10d37f0371',
+    },
+    services: {
+      auth: true, // Just as example. Can be any other service.
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
